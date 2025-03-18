@@ -1,0 +1,5 @@
+# Ignore all .bin, .o, .dis, .elf files
+*.bin
+*.o
+*.dis
+*.elf
