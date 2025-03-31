@@ -1,4 +1,15 @@
+/*
+SW5控制LED2，SW6控制LED3
+
+SW5对应EINT3，对应GPH0_3
+SW6对应EINT4，对应GPH0_4
+*/
+
 #include <stdint.h>
+
+// GPH寄存器地址 按键
+#define GPH0CON (*(volatile uint32_t *)0xE0200C00)
+#define GPH0DAT (*(volatile uint32_t *)0xE0200C04)
 
 // GPJ2 寄存器地址
 #define GPJ2CON  (*(volatile uint32_t *)0xE0200280)  // 配置寄存器
@@ -13,6 +24,32 @@
 #define LED2 (0x1 << 1)  // GPJ2_1
 #define LED1 (0x1 << 2)  // GPJ2_2
 #define LED0 (0x1 << 3)  // GPJ2_3
+
+/* 配置GPH0_3和GPH0_4为输入模式 */
+void key_init(void)
+{
+    // 清除GPH0_3的配置位[15:12]，设置为输入模式（0000）
+    GPH0CON &= ~(0xF << 12);
+
+    // 清除GPH0_4的配置位[19:16]，设置为输入模式（0000）
+    GPH0CON &= ~(0xF << 16);
+}
+
+/* 检测按键状态 */
+int check_keys(void)
+{
+    // 读取GPH0DAT寄存器状态
+    uint32_t data = GPH0DAT;
+
+    // SW5检测（GPH0_3，bit3），低电平有效
+    int sw5_pressed = !(data & (1 << 3));
+
+    // SW6检测（GPH0_4，bit4），低电平有效
+    int sw6_pressed = !(data & (1 << 4));
+
+    return (sw5_pressed | (sw6_pressed << 1));
+}
+
 
 // 初始化 GPIO
 void gpio_init(void) {
@@ -52,39 +89,26 @@ void delay_ms(uint32_t ms) {
     }
 }
 
-// 主程序
-int main(void) {
+/* 使用示例 */
+int main()
+{
+    key_init(); // 初始化按键
     gpio_init();  // 初始化 GPIO
 
-    while (1) {
-        // 点亮所有 LED
-        led_on(LED0 | LED1 | LED2 | LED3);
-        delay_ms(500);  // 延时 500ms
+    while (1)
+    {
+        int key_state = check_keys();
 
-        // 熄灭所有 LED
-        led_off(LED0 | LED1 | LED2 | LED3);
-        delay_ms(500);  // 延时 500ms
+        if (key_state & 0x01)
+        {
+            // SW5被按下时的处理（控制LED）
+        }
+        if (key_state & 0x02)
+        {
+            // SW6被按下时的处理（控制LED）
+        }
 
-        // 逐个点亮 LED
-        led_on(LED0);
-        delay_ms(200);
-        led_on(LED1);
-        delay_ms(200);
-        led_on(LED2);
-        delay_ms(200);
-        led_on(LED3);
-        delay_ms(200);
-
-        // 逐个熄灭 LED
-        led_off(LED0);
-        delay_ms(200);
-        led_off(LED1);
-        delay_ms(200);
-        led_off(LED2);
-        delay_ms(200);
-        led_off(LED3);
-        delay_ms(200);
+        // 建议添加去抖动延时（10-20ms）
     }
-
     return 0;
 }

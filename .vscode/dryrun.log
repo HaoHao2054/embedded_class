@@ -1,0 +1,6 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/yuanhao/linux/embedded_class'
+make: Leaving directory '/home/yuanhao/linux/embedded_class'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+
