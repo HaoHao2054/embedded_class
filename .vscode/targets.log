@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Mar 31 22:06:08 2025
+# Make data base, printed on Tue Apr 15 00:10:21 2025
 
 # Variables
 
@@ -52,8 +52,6 @@ MAKEFLAGS = pqrR
 CURDIR := /home/yuanhao/linux/embedded_class
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
-# environment
-VSCODE_L10N_BUNDLE_LOCATION = vscode-local:/c%3A/Users/20541/.vscode/extensions/ms-ceintl.vscode-language-pack-zh-hans-1.98.2025031209/translations/extensions/vscode.json-language-features.i18n.json
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
@@ -81,7 +79,7 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # environment
-VSCODE_NLS_CONFIG = {"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"/home/yuanhao/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/yuanhao/.vscode-server/data/clp/173f138c03d8ef116777fec0e3290eda.zh-cn/tcf.json","messagesFile":"/home/yuanhao/.vscode-server/data/clp/173f138c03d8ef116777fec0e3290eda.zh-cn/ddc367ed5c8936efe395cffeec279b04ffd7db78/nls.messages.json","corruptMarkerFile":"/home/yuanhao/.vscode-server/data/clp/173f138c03d8ef116777fec0e3290eda.zh-cn/corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"173f138c03d8ef116777fec0e3290eda.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"/home/yuanhao/.vscode-server/data/clp/173f138c03d8ef116777fec0e3290eda.zh-cn/tcf.json","_cacheRoot":"/home/yuanhao/.vscode-server/data/clp/173f138c03d8ef116777fec0e3290eda.zh-cn","_resolvedLanguagePackCoreLocation":"/home/yuanhao/.vscode-server/data/clp/173f138c03d8ef116777fec0e3290eda.zh-cn/ddc367ed5c8936efe395cffeec279b04ffd7db78","_corruptedFile":"/home/yuanhao/.vscode-server/data/clp/173f138c03d8ef116777fec0e3290eda.zh-cn/corrupted.info"}
+VSCODE_NLS_CONFIG = {"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"/home/yuanhao/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/yuanhao/.vscode-server/data/clp/24987db19a866ca9586d53f03ec42557.zh-cn/tcf.json","messagesFile":"/home/yuanhao/.vscode-server/data/clp/24987db19a866ca9586d53f03ec42557.zh-cn/4949701c880d4bdb949e3c0e6b400288da7f474b/nls.messages.json","corruptMarkerFile":"/home/yuanhao/.vscode-server/data/clp/24987db19a866ca9586d53f03ec42557.zh-cn/corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"24987db19a866ca9586d53f03ec42557.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"/home/yuanhao/.vscode-server/data/clp/24987db19a866ca9586d53f03ec42557.zh-cn/tcf.json","_cacheRoot":"/home/yuanhao/.vscode-server/data/clp/24987db19a866ca9586d53f03ec42557.zh-cn","_resolvedLanguagePackCoreLocation":"/home/yuanhao/.vscode-server/data/clp/24987db19a866ca9586d53f03ec42557.zh-cn/4949701c880d4bdb949e3c0e6b400288da7f474b","_corruptedFile":"/home/yuanhao/.vscode-server/data/clp/24987db19a866ca9586d53f03ec42557.zh-cn/corrupted.info"}
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # makefile
@@ -95,7 +93,7 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = /home/yuanhao/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/bin/remote-cli:/home/yuanhao/linux/luckfox-pico/tools/linux/toolchain/arm-rockchip830-linux-uclibcgnueabihf/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/e/software/Git/cmd:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Bandizip/:/mnt/c/Program Files/usbipd-win/:/mnt/d/toolchain/clang+llvm-19.1.7/bin:/mnt/c/Users/20541/AppData/Local/Microsoft/WindowsApps:/mnt/e/software/Microsoft VS Code/bin:/snap/bin:/usr/local/arm/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf/bin
+PATH = /home/yuanhao/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/bin/remote-cli:/home/yuanhao/linux/luckfox-pico/tools/linux/toolchain/arm-rockchip830-linux-uclibcgnueabihf/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/e/software/VMware/bin/:/mnt/e/software/python/Scripts/:/mnt/e/software/python/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/e/software/Git/cmd:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Bandizip/:/mnt/c/Program Files/usbipd-win/:/mnt/d/toolchain/clang+llvm-19.1.7/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/20541/AppData/Local/Microsoft/WindowsApps:/mnt/e/software/Microsoft VS Code/bin:/snap/bin:/usr/local/arm/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf/bin
 # default
 MAKEFILES := 
 # automatic
@@ -109,13 +107,13 @@ HOSTTYPE = x86_64
 # automatic
 +F = $(notdir $+)
 # environment
-WSL_INTEROP = /run/WSL/677_interop
+WSL_INTEROP = /run/WSL/703_interop
 # 'override' directive
 GNUMAKEFLAGS := 
 # environment
 LOGNAME = yuanhao
 # environment
-VSCODE_WSL_EXT_LOCATION = /mnt/c/Users/20541/.vscode/extensions/ms-vscode-remote.remote-wsl-0.88.5
+VSCODE_WSL_EXT_LOCATION = /mnt/c/Users/20541/.vscode/extensions/ms-vscode-remote.remote-wsl-0.99.0
 # makefile
 .DEFAULT_GOAL := 
 # environment
@@ -125,11 +123,11 @@ USER = yuanhao
 # default
 MAKE_VERSION := 4.3
 # environment
-_ = /home/yuanhao/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/node
+_ = /home/yuanhao/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/node
 # environment
 XDG_RUNTIME_DIR = /run/user/1000/
 # environment
-VSCODE_IPC_HOOK_CLI = /run/user/1000/vscode-ipc-49fa2343-e9f6-4d7a-b178-2af601664ea4.sock
+VSCODE_IPC_HOOK_CLI = /run/user/1000/vscode-ipc-fff1fc9b-8024-44db-ab81-b680571ce077.sock
 # environment
 HOME = /home/yuanhao
 # environment
@@ -149,7 +147,7 @@ WSL_DISTRO_NAME = Ubuntu-22.04
 # environment
 VSCODE_ESM_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # variable set hash-table stats:
-# Load=68/1024=7%, Rehash=0, Collisions=2/95=2%
+# Load=67/1024=7%, Rehash=0, Collisions=1/94=1%
 
 # Pattern-specific Variable Values
 
@@ -157,9 +155,9 @@ VSCODE_ESM_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 
 # Directories
 
-# . (device 2080, inode 165964): 8 files, no impossibilities.
+# . (device 2080, inode 165964): 9 files, no impossibilities.
 
-# 8 files, no impossibilities in 1 directories.
+# 9 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -209,12 +207,13 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 16 / storage = 141 B / avg = 8 B
-# current buf: size = 8162 B / used = 141 B / count = 16 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 17 / storage = 148 B / avg = 8 B
+# current buf: size = 8162 B / used = 148 B / count = 17 / avg = 8 B
+ 
 
-# strcache performance: lookups = 19 / hit rate = 15%
+# strcache performance: lookups = 20 / hit rate = 15%
 # hash-table stats:
-# Load=16/8192=0%, Rehash=0, Collisions=0/19=0%
-# Finished Make data base on Mon Mar 31 22:06:08 2025
+# Load=17/8192=0%, Rehash=0, Collisions=0/20=0%
+# Finished Make data base on Tue Apr 15 00:10:21 2025
 
  
